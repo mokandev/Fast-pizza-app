@@ -11,7 +11,6 @@ interface RouteError {
 function PageNotFound() {
   const navigate = useNavigate();
   const error = useRouteError() as RouteError;
-  console.log('error', error)
 
   return (
     <div>
