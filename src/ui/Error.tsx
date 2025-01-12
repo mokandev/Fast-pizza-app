@@ -8,9 +8,10 @@ interface RouteError {
   message?: string
 }
 
-function PageNotFound() {
+function Error() {
   const navigate = useNavigate();
   const error = useRouteError() as RouteError;
+  console.log('error', error)
 
   return (
     <div>
@@ -21,4 +22,4 @@ function PageNotFound() {
   );
 }
 
-export default PageNotFound;
+export default Error;
